@@ -1,7 +1,7 @@
 Basic image to create micro-services with Python Sanic
 ======================================================
 
-**SO base:** ubuntu:latest [https://hub.docker.com/r/library/ubuntu/](https://hub.docker.com/r/library/ubuntu/)
+**SO base:** ubuntu:zesty [https://hub.docker.com/r/library/ubuntu/](https://hub.docker.com/r/library/ubuntu/)
 
 Packages
 --------
