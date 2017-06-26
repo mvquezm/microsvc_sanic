@@ -8,8 +8,9 @@
 FROM ubuntu:zesty
 MAINTAINER Michel Velázquez-Mariño <mvquezm@gmail.com>
 
-RUN apt-get update
-RUN apt-get install -y curl vim net-tools
+RUN apt-get update \
+    && apt-get install -y curl vim net-tools
+
 RUN apt-get install -y python3.6 python3-pip
 
 RUN pip3 install --upgrade pip
