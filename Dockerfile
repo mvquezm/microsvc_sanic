@@ -6,7 +6,6 @@
 
 # Use from docker cloud as microsvc_sanic:tag
 FROM ubuntu:zesty
-MAINTAINER Michel Velázquez-Mariño <mvquezm@gmail.com>
 
 RUN apt-get update \
     && apt-get install -y curl vim net-tools
