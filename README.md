@@ -5,6 +5,6 @@ Basic image to create micro-services with Python Sanic
 
 Packages
 --------
-- **Python:** python3, python3-pip, sanic, yml
+- **Python:** python3, python3-pip, sanic, PyYAML
 - **Net tools:** curl, net-tools
 - **Others:** vim
