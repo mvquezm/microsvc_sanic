@@ -2,3 +2,4 @@ sanic
 PyYAML
 sqlalchemy
 asyncpgsa
+user-agents
