@@ -9,9 +9,9 @@ FROM ubuntu:zesty
 
 RUN apt-get update \
     && apt-get -y upgrade \
-    && apt-get install -y curl vim net-tools gcc
+    && apt-get install --no-install-recommends --no-install-suggests -y curl vim net-tools gcc
 
-RUN apt-get install -y python3.6-dev \
+RUN apt-get install --no-install-recommends --no-install-suggests -y python3.6-dev \
     && curl https://bootstrap.pypa.io/get-pip.py >> get-pip.py \
     && python3.6 get-pip.py
 
@@ -22,4 +22,5 @@ WORKDIR /tmp
 
 RUN pip3.6 install -r requirements.txt
 
+# after install all python packages remove gcc, is not longer necessary
 RUN apt-get autoremove -y gcc

@@ -1,5 +1,7 @@
 sanic
+sanic-session
 PyYAML
 sqlalchemy
 asyncpgsa
 user-agents
+asyncio_redis
