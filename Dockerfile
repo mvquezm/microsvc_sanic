@@ -11,7 +11,7 @@ RUN apt-get update \
     && apt-get -y upgrade \
     && apt-get install --no-install-recommends --no-install-suggests -y curl vim net-tools gcc
 
-RUN apt-get install --no-install-recommends --no-install-suggests -y python3.6-dev \
+RUN apt-get install --no-install-recommends --no-install-suggests -y python3.6-dev ca-certificates\
     && curl https://bootstrap.pypa.io/get-pip.py >> get-pip.py \
     && python3.6 get-pip.py
 
