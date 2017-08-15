@@ -9,10 +9,8 @@ FROM ubuntu:zesty
 
 RUN apt-get update \
     && apt-get -y upgrade \
-    && apt-get install --no-install-recommends --no-install-suggests -y curl vim net-tools gcc
-
-RUN apt-get install --no-install-recommends --no-install-suggests -y python3.6-dev ca-certificates\
-    && curl https://bootstrap.pypa.io/get-pip.py >> get-pip.py \
+    && apt-get install --no-install-recommends --no-install-suggests -y curl vim net-tools openssh-server gcc python3.6-dev ca-certificates\
+    && curl -L https://bootstrap.pypa.io/get-pip.py >> get-pip.py \
     && python3.6 get-pip.py
 
 RUN pip3.6 install --upgrade pip

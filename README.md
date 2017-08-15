@@ -5,6 +5,10 @@ Basic image to create micro-services with Python Sanic
 
 Packages
 --------
-- **Python:** python3.6, pip3.6, sanic, PyYAML, user-agents, sqlalchemy, asyncpgsa
-- **Net tools:** curl, net-tools
+- **Python:** python3.6, pip3.6, sanic, sanic-session, PyYAML, user-agents, sqlalchemy, asyncpgsa, asyncio_redis
+- **Net tools:** curl, net-tools, openssh-server
 - **Others:** vim
+
+
+
+
